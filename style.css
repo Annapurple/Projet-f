@@ -16,7 +16,6 @@ html {
 
 a {
     text-decoration: none;
-
 }
 
 h1,
@@ -29,6 +28,10 @@ h4 {
     display: none;
 }
 
+p{
+    font-family: "Regular";
+    font-size: 18px;
+}
 header {
     background-color: #141024;
     padding-bottom: 179px;
@@ -63,10 +66,8 @@ nav {
 }
 
 
-
-
 nav a {
-    color: #d4d4d4;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -76,9 +77,6 @@ nav ul {
   gap: 30px;
   list-style: none;
 }
-
-
-
 
 
 .nav-container ul {
@@ -102,8 +100,9 @@ h1 {
 }
 
 .header-content {
+    display: flex;
     margin-left: 126px;
-    width: 254px;
+    width: 700px;
 
 }
 
@@ -129,44 +128,6 @@ header>.container {
     position: relative;
 }
 
-header>.container::before {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("../img/logo.png");
-    right: 0;
-    top: 140px;
-    width: 438px;
-    height: 438px;
-
-}
-
-.nav-container>ul>li:first-child>a::before {
-    content: "";
-    display: inline-block;
-    background-image: url("../img/mail-icon.png");
-    width: 17px;
-    height: 12px;
-}
-
-.nav-container>ul>li:last-child>a::before {
-    content: "";
-    display: inline-block;
-    background-image: url("../img/phone.png");
-    width: 17px;
-    height: 17px;
-}
-
-
-/* .header-content>a {
-    text-transform: uppercase;
-    background-color: red;
-    border-radius: 10px;
-    text-decoration: none;
-    color: #000000;
-    position: relative;
-}
- */
 
 .info li {
     position: relative;
@@ -184,7 +145,7 @@ header>.container::before {
 }
 
 .info li:nth-child(1)::before {
-    background-image: url("../img/advantage-icon-1 1.png");
+    background-image: url("../img/pers1.jpg");
 }
 
 .info li:nth-child(2)::before {
@@ -243,22 +204,11 @@ header>.container::before {
 }
 
 
-.point_style li::after {
-    top: 8px;
-    left:0px;
-    content: "";
-    position: absolute;
-    display: block;
-    width: 8px;
-    height: 8px;
-    border-radius: 8px;
-    background-color: #ffcb06;
-}
 
 .header-content a {
     display: inline-block;
     text-transform: uppercase;
-    background-color: red;
+    background-color: #D52027;
     color: white;
     padding: 12px 24px;
     border-radius: 10px;
@@ -274,7 +224,6 @@ header>.container::before {
   position: relative;
 }
 
-/* Скрываем стандартные списки */
 .nav-container > ul,
 .nav-container nav > ul {
   list-style: none;
@@ -282,7 +231,6 @@ header>.container::before {
   padding: 0;
 }
 
-/* Первый ul — это nav > ul (меню) — центрируем его */
 .nav-container nav {
   position: absolute;
   left: 50%;
@@ -323,4 +271,10 @@ header>.container::before {
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
+}
+
+
+.prof ul{
+    display: flex;
+    align-content: space-around;
 }
