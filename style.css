@@ -70,7 +70,12 @@ nav a {
     text-align: center;
 }
 
-
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
 
 
 
@@ -153,7 +158,7 @@ header>.container::before {
 }
 
 
-.header-content>a {
+/* .header-content>a {
     text-transform: uppercase;
     background-color: red;
     border-radius: 10px;
@@ -161,7 +166,7 @@ header>.container::before {
     color: #000000;
     position: relative;
 }
-
+ */
 
 .info li {
     position: relative;
@@ -248,4 +253,74 @@ header>.container::before {
     height: 8px;
     border-radius: 8px;
     background-color: #ffcb06;
+}
+
+.header-content a {
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: red;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 54px;
+  margin-bottom: 113px;
+  position: relative;
+}
+
+/* Скрываем стандартные списки */
+.nav-container > ul,
+.nav-container nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Первый ul — это nav > ul (меню) — центрируем его */
+.nav-container nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.nav-container nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-container nav a {
+  color: #d4d4d4;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-container > ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+
+.nav-container > ul li:first-child a {
+  
+  color: #fff;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav-container > ul li:last-child a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
 }
