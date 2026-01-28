@@ -1,280 +1,108 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-html {
-    font-family: Verdana;
-    font-size: 14px;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
 
-.container {
-    width: 1040px;
-    margin: 0 auto;
-}
+<body>
+    <header>
+        <div class="container">
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="">О школе</a></li>
+                        <li><a href="">Тренеры</a></li>
+                        <li><a href="">Стоимость</a></li>
+                    </ul>
+                </nav>
+                <ul>
+                    <li><a href="">ROBO.SCHOOL</a></li>
+                    <li><a href="">+7 800 000 11 22</a></li>
+                </ul>
+            </div>
+            <div class="header-content">
+                <div class="header_text">
+                    <h1>ROBO SCHOOL</h1>
+                    <a href="">Записаться на курс</a>
+                    <p>Курсы повышения квалификации по робототехнике для педагогов начальной школы</p>
+                </div>
+                <img src="img/logo.png" alt="" href="" style="width: 450px; ">
+            </div>
+    </header>
+    <main>
+        <section class="adv">
+            <div class="container">
+                <div>
+                    <p><strong>Robo School</strong> - учреждение для формирования кадрового педагогического резерва в
+                        сфере робототехники и программирования</p>
+                    <ul class="info">
+                        <li>
+                            10<br>
+                            УМК по различным направлениям по робототехнике
+                        </li>
+                        <li>
+                            20 <br>
+                            Школ, в которых запущена робототехника
+                        </li>
+                        <li>
+                            100 <br>
+                            Педагогов прошедших курсы повышения квалификации
+                        </li>
+                        <li>
+                            10000 <br>
+                            Педагогов прошедших курсы повышения квалификации
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="curs">
+            <div class="container2">
+                <h3>Что вы получите после курса</h3>
+                <ul class="info">
+                    <li>
+                        Дающее право преподавать робототехнику для детей 6-12 лет в образовательных учреждениях
+                    </li>
+                    <li>
+                        По основам разработки учебно-методических комплексов по робототехнике и программированию
+                    </li>
+                    <li>
+                        Возможность пройти практику  по преподаванию робототехники на базе R:ED LAB (в оффлайн или
+                        онлайн формате)
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="prof">
+            <ul>
+                <li>
+                    <img src="img/pers1.jpg" alt="" href="" style="width: 300px;">
+                    <h3>Ирина Лайм</h3>
+                    <p>преподаватель по робототехнике</p>
+                </li>
+                <li>
+                    <img src="img/pers2.jpg" alt="" href="" style="width: 300px;">
+                    <h3>Марина Орлова</h3>
+                    <p>преподаватель по робототехнике</p>
+                </li>
+                <li>
+                    <img src="img/pers3.jpg" alt="" href="" style="width: 300px;">
+                    <h3>Максим Петров</h3>
+                    <p>преподаватель по программированию</p>
+                </li>
+                <li>
+                    <img src="img/pers4.jpg" alt="" href="" style="width: 300px;">
+                    <h3>Константин Назаров</h3>
+                    <p>преподаватель по робототехнике</p>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer></footer>
+</body>
 
-a {
-    text-decoration: none;
-}
-
-h1,
-h2,
-h3 {
-    font-family: "Courier New";
-}
-
-h4 {
-    display: none;
-}
-
-p{
-    font-family: "Regular";
-    font-size: 18px;
-}
-header {
-    background-color: #141024;
-    padding-bottom: 179px;
-    color: #ffffff;
-}
-
-.adv {
-    display: flex;
-    background-color: #f9f8f8;
-    color: #070000;
-}
-
-.content {
-    background-color: #ffffff;
-}
-
-footer {
-    background-color: #131313;
-
-}
-
-.nav-container {
-    display: flex;
-    padding-top: 54px;
-    margin-bottom: 113px;
-    /* justify-content: space-between; */
-}
-
-nav {
-    flex-grow: 1;
-    margin-left: 62px;
-}
-
-
-nav a {
-    color: #ffffff;
-    text-align: center;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  list-style: none;
-}
-
-
-.nav-container ul {
-    display: flex;
-    list-style: none;
-    padding-top: 31px;
-}
-
-.nav-container>ul>li {
-    margin-left: 24px;
-}
-
-nav>ul>li {
-    margin-right: 30px;
-}
-
-h1 {
-    color: #ffffff;
-    font-size: 44px;
-    font-weight: bold;
-}
-
-.header-content {
-    display: flex;
-    margin-left: 126px;
-    width: 700px;
-
-}
-
-.header-content>p {
-    margin-top: 32px;
-    margin-bottom: 54px;
-}
-
-.info {
-    padding-top: 187px;
-    padding-bottom: 79px;
-    justify-content: space-between;
-    display: flex;
-    list-style: none;
-}
-
-
-.info ul>li {
-    width: 170;
-}
-
-header>.container {
-    position: relative;
-}
-
-
-.info li {
-    position: relative;
-
-}
-
-.info li::before {
-    content: "";
-    width: 60px;
-    height: 68px;
-    position: absolute;
-    display: block;
-    top: -102px;
-    ;
-}
-
-.info li:nth-child(1)::before {
-    background-image: url("../img/pers1.jpg");
-}
-
-.info li:nth-child(2)::before {
-    background-image: url("../img/advantage-icon-2 1.png");
-}
-
-.info li:nth-child(3)::before {
-    background-image: url("../img/advantage-icon-3 1.png");
-}
-
-.info li:nth-child(4)::before {
-    background-image: url("../img/advantage-icon-4 1.png");
-}
-
-.content>.container>div {
-    display: flex;
-    justify-content: space-between;
-}
-
-.content>.container>div:first-of-type>div:last-child {
-    width: 443px;
-}
-
-.content>.container>div:last-of-type>div:first-child {
-    width: 455px;
-}
-
-.content>.container>div:last-of-type>div:last-child {
-    width: 401px;
-}
-
-.content {
-    padding: 80px 0 126px 0;
-}
-
-.content h3 {
-    font-weight: bold;
-    font-size: 24px;
-    padding-bottom: 27px;
-}
-
-.content h3~ul>li {
-    position: relative;
-    margin-bottom: 28px;
-    padding-left: 28px;
-}
-
-.content h3:first-of-type {
-    padding-bottom: 44px;
-    padding-top: 5px;
-}
-
-
-.point_style ul {
-    list-style: none;
-}
-
-
-
-.header-content a {
-    display: inline-block;
-    text-transform: uppercase;
-    background-color: #D52027;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 10px;
-    font-weight: bold;
-}
-
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 54px;
-  margin-bottom: 113px;
-  position: relative;
-}
-
-.nav-container > ul,
-.nav-container nav > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-container nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
-.nav-container nav ul {
-  display: flex;
-  gap: 30px;
-}
-
-.nav-container nav a {
-  color: #d4d4d4;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.nav-container > ul {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-
-
-.nav-container > ul li:first-child a {
-  
-  color: #fff;
-  font-family: "Courier New", monospace;
-  font-weight: bold;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-.nav-container > ul li:last-child a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-
-.prof ul{
-    display: flex;
-    align-content: space-around;
-}
+</html>
